@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e80f03ebd6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+            </nav>
+             <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Sahil</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+    <!-- about us section starts here-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg">
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                            <p>My name is Sahil. I am from Hisar, Distt- Hisar (Haryana).  I am an undergraduate student pursuing Bachelor of Technology in Computer Science and Engineering from JC BOSE UNIVERSITY OF SCIENCE AND TECHNOLOGY, Faridabad. My main interest is in web development and coding, so currently, I'm pursuing courses in this field.
+                                </p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                        <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                                        <li><span>App Devlopment</span><br>Building Android/ios apps</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li><span>2024</span><br>Designing Web/App interfaces</li>
+                                        <li><span>2023-2024</span><br>Web App Devlopment</li>
+                                        <li><span>2022-2023</span><br>Building Android/ios apps</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                <ul>
+                                     <li><span>2026</span><br>Ethical Hacking Course</li>
+                                     <li><span>2022</span><br>B.tech from YMCA Faridabad</li>
+                                </ul>
+                           </div>
+                    </div>     
+            </div>    
+        </div>
+    </div>
+    <!-- services -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App </h3>
+                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>Online Trading App </h3>
+                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.jpg">
+                    <div class="layer">
+                        <h3>Social Media App </h3>
+                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- contact -->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <h2 class="sub-title ">-get in touch-</h2>
+                <p><i class="fa-solid fa-paper-plane"></i>Sahilluthra495@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>7082760377</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sahil.luthra.56?mibextid=2JQ9oc"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/moody_muse_"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sahil-luthra-0a418b250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/SahilResume.pdf" download class="btn btn3">Download CV</a>
+            </div>
+            <div class="class-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="YOUR NAME" required>
+                    <input type="email" name="Email" placeholder="YOUR EMAIL" required>
+                    <textarea name="Message"rows="6"  placeholder="YOUR MESSAGE"></textarea>
+                    <button type="submit"class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa fa-copyright" aria-hidden="true">   Sahil luthra<i class="fa-solid fa-heart"></i>.</i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var typed = new Typed(".typing", {
+            strings: ["Coder", "Developer", "Designer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    });
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwq3zdSQj6Raun6y3Gf9Hc5DShzWTlUMf0HCBkRKdrYx2uuXEwmfi7yZpn7N5GAOCwfaA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                message.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    
+</body>
+</html>
