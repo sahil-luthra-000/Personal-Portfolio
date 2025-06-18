@@ -389,11 +389,18 @@
                                 <input type="text" name="Name" placeholder="YOUR NAME" required>
                                 <input type="email" name="Email" placeholder="YOUR EMAIL" required>
                                 <textarea name="Message" rows="6" placeholder="YOUR MESSAGE"></textarea>
-                                <button type="submit" class="btn btn2">SUBMIT</button>
+                                <button type="submit" class="btn btn2" id="submit-btn">
+                                    <span id="btn-text">SUBMIT</span>
+                                    <span id="btn-loader" style="display: none;">
+                                        <i class="fa fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+
                             </form>
                         </div>
                     </div>
                 </div>
+                <span id="msg">Hello</span>
                 <div class="copyright">
                     <p>Copyright <i class="fa fa-copyright" aria-hidden="true"> Sahil luthra<i
                                 class="fa-solid fa-heart"></i>.</i></p>
@@ -436,23 +443,40 @@
                 }
             </script>
             <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwq3zdSQj6Raun6y3Gf9Hc5DShzWTlUMf0HCBkRKdrYx2uuXEwmfi7yZpn7N5GAOCwfaA/exec'
-                const form = document.forms['submit-to-google-sheet']
-                const msg = document.getElementById("msg")
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwq3zdSQj6Raun6y3Gf9Hc5DShzWTlUMf0HCBkRKdrYx2uuXEwmfi7yZpn7N5GAOCwfaA/exec';
+                const form = document.forms['submit-to-google-sheet'];
+                const msg = document.getElementById("msg");
+                const submitBtn = document.getElementById("submit-btn");
+                const btnText = document.getElementById("btn-text");
+                const btnLoader = document.getElementById("btn-loader");
 
                 form.addEventListener('submit', e => {
-                    e.preventDefault()
+                    e.preventDefault();
+
+                    // Show loader
+                    btnText.style.display = 'none';
+                    btnLoader.style.display = 'inline-block';
+                    submitBtn.disabled = true;
+
                     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                         .then(response => {
-                            msg.innerHTML = "Message sent successfully"
-                            setTimeout(function () {
-                                message.innerHTML = ""
-                            }, 5000)
-                            form.reset()
+                            msg.innerHTML = "Message sent successfully";
+                            setTimeout(() => msg.innerHTML = "", 5000);
+                            form.reset();
                         })
-                        .catch(error => console.error('Error!', error.message))
-                })
+                        .catch(error => {
+                            console.error('Error!', error.message);
+                            msg.innerHTML = "Failed to send message!";
+                        })
+                        .finally(() => {
+                            // Hide loader and enable button
+                            btnText.style.display = 'inline';
+                            btnLoader.style.display = 'none';
+                            submitBtn.disabled = false;
+                        });
+                });
             </script>
+
 
 
 </body>
