@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -23,207 +25,436 @@
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"  onclick="openmenu()"></i>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-             <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Sahil</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
+            <!-- home section start -->
+            <section class="home" id="home">
+                <div class="max-width">
+                    <div class="home-content">
+                        <div class="text-1">Hello, my name is</div>
+                        <div class="text-2">Sahil</div>
+                        <div class="text-3">And I'm a <span class="typing"></span></div>
 
-                <a href="#">Hire me</a>
-            </div>
-        </div>
-    </section>
-    <!-- about us section starts here-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpeg">
+                        <a href="#contact">Hire me</a>
+                    </div>
                 </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About me</h1>
-                            <p>My name is Sahil. I am from Hisar, Distt- Hisar (Haryana).  I am an undergraduate student pursuing Bachelor of Technology in Computer Science and Engineering from JC BOSE UNIVERSITY OF SCIENCE AND TECHNOLOGY, Faridabad. My main interest is in web development and coding, so currently, I'm pursuing courses in this field.
-                                </p>
-                                <div class="tab-titles">
-                                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                                </div>
-                                <div class="tab-contents active-tab" id="skills">
-                                    <ul>
-                                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                                        <li><span>Web Devlopment</span><br>Web App Devlopment</li>
-                                        <li><span>App Devlopment</span><br>Building Android/ios apps</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-contents" id="experience">
-                                    <ul>
-                                        <li><span>2024</span><br>Designing Web/App interfaces</li>
-                                        <li><span>2023-2024</span><br>Web App Devlopment</li>
-                                        <li><span>2022-2023</span><br>Building Android/ios apps</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-contents" id="education">
+            </section>
+            <!-- About Me Section -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <!-- Profile Image -->
+                        <div class="about-col-1">
+                            <img src="images/WhatsApp Image 2025-06-17 at 23.16.57_5c98850d.jpg" alt="Sahil Luthra">
+                        </div>
+
+                        <!-- Content -->
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About <span style="color: #ff004f;">Me</span></h1>
+                            <p>
+                                I'm Sahil, a pre-final year B.Tech student at JC Bose University of Science and
+                                Technology (YMCA), Faridabad.
+                                Passionate about full-stack development, I love creating scalable web & mobile
+                                applications and continuously enhancing my problem-solving skills.
+                                My focus is on building intuitive UIs, efficient backend systems, and working on
+                                impactful projects that bring value to users.
+                            </p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="education">
                                 <ul>
-                                     <li><span>2026</span><br>Ethical Hacking Course</li>
-                                     <li><span>2022</span><br>B.tech from YMCA Faridabad</li>
+                                    <li><span>2022 - 2026</span><br>B.Tech in Computer Engineering – JC Bose University
+                                        (YMCA), Faridabad</li>
                                 </ul>
-                           </div>
-                    </div>     
-            </div>    
-        </div>
-    </div>
-    <!-- services -->
-    <div id="Services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
-                    <h2>App Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fas fa-app-store"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vel, a repellat cupiditate eveniet ducimus magni. Explicabo voluptatem aut consequatur eveniet fugiat repellendus consectetur doloremque obcaecati, sequi incidunt iusto dolorem!</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <!-- portfolio-->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work2.jpg">
-                    <div class="layer">
-                        <h3>Online Shopping App </h3>
-                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work3.jpg">
-                    <div class="layer">
-                        <h3>Online Trading App </h3>
-                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work4.jpg">
-                    <div class="layer">
-                        <h3>Social Media App </h3>
-                        <p>The app connects you to the talented people arround the world.Download it from play store.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
-        </div>
-    </div>
-    <!-- contact -->
-   <div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <h2 class="sub-title ">-get in touch-</h2>
-                <p><i class="fa-solid fa-paper-plane"></i>Sahilluthra495@gmail.com</p>
-                <p><i class="fa-solid fa-mobile"></i>7082760377</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/sahil.luthra.56?mibextid=2JQ9oc"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://instagram.com/moody_muse_"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/sahil-luthra-0a418b250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <div class="container">
+                    <div class="skills-content">
+                        <div class="skills-text">
+                            <h4>Favourite Skills</h4>
+                            <h1>My <span style="color: #ff004f;">Skills</span></h1>
+                            <p>Have a glance over the skills I have and what I can perform for your project</p>
+                        </div>
+
+                        <div class="skills-grid">
+                            <!-- Each skill -->
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg"
+                                    alt="React">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/nextjs.png" alt="Next.js">
+                                <span>Next.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg"
+                                    alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg"
+                                    alt="TypeScript">
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg"
+                                    alt="HTML5">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg"
+                                    alt="CSS3">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg"
+                                    alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="icons/react native.png" alt="React Native">
+                                <span>React Native</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg"
+                                    alt="Node.js">
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg"
+                                    alt="MongoDB">
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg"
+                                    alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                                    alt="Postman">
+                                <span>Postman</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma">
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <a href="images/SahilResume.pdf" download class="btn btn3">Download CV</a>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                <div class="container">
+                    <div class="experience-content">
+                        <h1 class="sub-title">My <span style="color: #ff004f;">Experience</span></h1>
+
+                        <div class="experience-timeline">
+
+                            <!-- Androwestech -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h3>Full Stack Developer Intern – Androwestech Pvt. Ltd.</h3>
+                                    <a href="./Sahil resume/Sahil_Certificate.pdf" download class="icon-download-btn"
+                                        title="Download Certificate">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+                                            alt="Download" />
+                                    </a>
+                                </div>
+                                <span>Oct 2024 – Apr 2025 · Remote</span>
+                                <p>
+                                    Worked on four production-grade projects, including hospital grievance and rating
+                                    apps (React Native & PHP),
+                                    a publishing platform (MERN), and a research journal portal (React + TypeScript +
+                                    Razorpay). Built responsive
+                                    UIs, multilingual support, feedback systems, admin dashboards, and integrated APIs,
+                                    auth, and payments.
+                                </p>
+                            </div>
+
+                            <!-- GSSOC -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h3>Open Source Contributor – GirlScript Summer of Code</h3>
+                                    <a href="./Sahil resume/1731439024242.jpeg" download class="icon-download-btn"
+                                        title="Download Certificate">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+                                            alt="Download" />
+                                    </a>
+                                </div>
+                                <span>Oct 2024 – Nov 2024 · Remote</span>
+                                <p>
+                                    Contributed to open-source projects via GitHub, resolved issues, built features, and
+                                    collaborated with mentors
+                                    and contributors to follow best practices in code and collaboration.
+                                </p>
+                            </div>
+
+                            <!-- Verve Bridge -->
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h3>Full Stack Developer Intern – Verve Bridge</h3>
+                                    <a href="./Sahil resume//1727172899462.jpeg" download class="icon-download-btn"
+                                        title="Download Certificate">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png"
+                                            alt="Download" />
+                                    </a>
+                                </div>
+                                <span>Jul 2024 – Sep 2024 · Remote</span>
+                                <p>
+                                    Built frontend components in React.js and developed backend APIs using Node.js and
+                                    Express.js.
+                                    Optimized UI responsiveness, cross-browser compatibility, and API integration across
+                                    multiple client projects.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <div id="services">
+                <div class="container">
+                    <h1 class="sub-title">My <span style="color: #ff004f;">Services</span></h1>
+
+                    <div class="services-list">
+                        <!-- Frontend -->
+                        <div class="service-box">
+                            <div class="icon-container">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h2>Frontend Developer</h2>
+                            <h3>I can build</h3>
+                            <ul>
+                                <li>The visually appealing website's interface</li>
+                                <li>Interactive and dynamic elements to your web pages</li>
+                                <li>Animations and form validation to complex frontend functionality</li>
+                                <li>A wide range of JavaScript development tasks</li>
+                            </ul>
+                        </div>
+
+                        <!-- Backend -->
+                        <div class="service-box">
+                            <div class="icon-container">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h2>Backend Developer</h2>
+                            <h3>I can build</h3>
+                            <ul>
+                                <li>RESTful APIs</li>
+                                <li>Backend systems using Node.js, Express.js, or PHP</li>
+                                <li>Integrate third-party services and auth systems</li>
+                                <li>Secure server-side logic and data flow</li>
+                            </ul>
+                        </div>
+
+                        <!-- Database -->
+                        <div class="service-box">
+                            <div class="icon-container">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h2>Database Management</h2>
+                            <h3>I can build</h3>
+                            <ul>
+                                <li>Database management using MongoDB and MySQL</li>
+                                <li>Efficient data storage and retrieval systems</li>
+                                <li>Admin dashboards with analytics and access control</li>
+                                <li>Secure backups, monitoring, and optimization</li>
+                            </ul>
+                        </div>
+                        <!-- Android Development -->
+                        <div class="service-box">
+                            <i class="fab fa-android"></i>
+                            <h2>Android Developer</h2>
+                            <h3>I can build</h3>
+                            <ul>
+                                <li>Cross-platform Android apps using React Native</li>
+                                <li>Custom UI with native-like performance</li>
+                                <li>Multilingual app support & real-time feedback features</li>
+                                <li>Integration with REST APIs, Firebase, and local storage</li>
+                                <li>Deployment-ready builds for Play Store and Kiosk systems</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="class-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="YOUR NAME" required>
-                    <input type="email" name="Email" placeholder="YOUR EMAIL" required>
-                    <textarea name="Message"rows="6"  placeholder="YOUR MESSAGE"></textarea>
-                    <button type="submit"class="btn btn2">SUBMIT</button>
-                </form>
-                <span id="msg">Hello</span>
+
+            <!-- portfolio-->
+            <!-- My Work Section -->
+            <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My <span style="color: #ff004f;">Work</span></h1>
+
+                    <div class="project-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <h3>Sadar Hospital AndroGrievance App</h3>
+                            <div class="tags">
+                                <span>React Native</span>
+                                <span>PHP</span>
+                                <span>Play Store</span>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.androwebstech.grievance"
+                                class="project-btn">Go to project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+
+
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <h3>The Maximus Report</h3>
+                            <div class="tags">
+                                <span>MERN</span>
+                                <span>Admin Panel</span>
+                                <span>Publishing</span>
+                            </div>
+                            <a href="https://themaximusreport.com/" class="project-btn">Go to project <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <h3>IFRJ Journal Index</h3>
+                            <div class="tags">
+                                <span>React + TS</span>
+                                <span>PHP</span>
+                                <span>Razorpay</span>
+                            </div>
+                            <a href="https://www.ifrjindex.com/" class="project-btn">Go to project <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <h3>Wisdom Wave (E Learning Platform)</h3>
+                            <div class="tags">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <a href="https://wisdomwave-by-sahil-pi.vercel.app/" class="project-btn">Go to project <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="project-card">
+                            <h3> Thread Beast (E-Commerce Platform)</h3>
+                            <div class="tags">
+                                <span>MERN Stack</span>
+                                <span>JWT Auth</span>
+                                <span>Admin Dashboard</span>
+                            </div>
+                            <a href="#" class="project-btn">Go to project <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright <i class="fa fa-copyright" aria-hidden="true">   Sahil luthra<i class="fa-solid fa-heart"></i>.</i></p>
-    </div>
-</div>
 
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+            <!-- contact -->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <h2 class="sub-title ">-get in touch-</h2>
+                            <p><i class="fa-solid fa-paper-plane"></i>Sahilluthra495@gmail.com</p>
+                            <p><i class="fa-solid fa-mobile"></i>7082760377</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/sahil.luthra.56?mibextid=2JQ9oc"><i
+                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://instagram.com/sah.il_luthra"><i class="fa-brands fa-instagram"></i></a>
+                                <a
+                                    href="https://www.linkedin.com/in/sahil-luthra-0a418b250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <a href="./Sahil resume/Resume .pdf" download class="btn btn3">Download CV</a>
+                        </div>
+                        <div class="class-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="YOUR NAME" required>
+                                <input type="email" name="Email" placeholder="YOUR EMAIL" required>
+                                <textarea name="Message" rows="6" placeholder="YOUR MESSAGE"></textarea>
+                                <button type="submit" class="btn btn2">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright <i class="fa fa-copyright" aria-hidden="true"> Sahil luthra<i
+                                class="fa-solid fa-heart"></i>.</i></p>
+                </div>
+            </div>
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var typed = new Typed(".typing", {
-            strings: ["Coder", "Developer", "Designer", "Freelancer"],
-            typeSpeed: 100,
-            backSpeed: 60,
-            loop: true
-        });
-    });
-</script>
-<script>
-    var sidemenu =document.getElementById("sidemenu");
+            <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
 
-    function openmenu(){
-        sidemenu.style.right="0";
-    }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwq3zdSQj6Raun6y3Gf9Hc5DShzWTlUMf0HCBkRKdrYx2uuXEwmfi7yZpn7N5GAOCwfaA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML="Message sent successfully"
-            setTimeout(function(){
-                message.innerHTML=""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+                function opentab(tabname) {
+                    for (tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for (tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            </script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var typed = new Typed(".typing", {
+                        strings: ["Coder", "Developer", "Designer", "Freelancer"],
+                        typeSpeed: 100,
+                        backSpeed: 60,
+                        loop: true
+                    });
+                });
+            </script>
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
 
-    
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px";
+                }
+            </script>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwq3zdSQj6Raun6y3Gf9Hc5DShzWTlUMf0HCBkRKdrYx2uuXEwmfi7yZpn7N5GAOCwfaA/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => {
+                            msg.innerHTML = "Message sent successfully"
+                            setTimeout(function () {
+                                message.innerHTML = ""
+                            }, 5000)
+                            form.reset()
+                        })
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+
+
 </body>
+
 </html>
