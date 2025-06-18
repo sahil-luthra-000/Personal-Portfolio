@@ -267,7 +267,7 @@ nav ul li a:hover::after {
 
 /* Experience Section */
 #experience {
-    background-color: #000;
+    /* background-color: #000; */
     color: #fff;
     padding: 80px 20px;
 }
@@ -295,6 +295,7 @@ nav ul li a:hover::after {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 .experience-header {
@@ -413,7 +414,7 @@ nav ul li a:hover::after {
 /*--------portfolio---------*/
 #portfolio {
     padding: 60px 0;
-    background: #111;
+    /* background: #111; */
     color: #fff;
 }
 
@@ -689,6 +690,10 @@ nav .fa-solid {
         z-index: -1;
     }
 
+    .project-card {
+        z-index: -1;
+    }
+
     .layer h3 {
         font-weight: 400;
         margin-bottom: 12px;
@@ -732,7 +737,9 @@ nav .fa-solid {
         font-size: 28px;
     }
 
-
+    .icon-download-btn img {
+        z-index: -10;
+    }
 }
 
 #msg {
